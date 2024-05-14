@@ -1,0 +1,4 @@
+Create Profile for codedeploy : aws iam add-role-to-instance-profile --role-name Ec2CodeDeployPermission --instance-profile-name Ec2CodeDeployPermission
+
+Assign Role to Profile : aws iam add-role-to-instance-profile --role-name EC2CodeDeployRole --instance-profile-name Ec2CodeDeployPermission
+
