@@ -2,3 +2,16 @@ Create Profile for codedeploy : aws iam add-role-to-instance-profile --role-name
 
 Assign Role to Profile : aws iam add-role-to-instance-profile --role-name EC2CodeDeployRole --instance-profile-name Ec2CodeDeployPermission
 
+------------------------------------------------
+
+#!/bin/bash
+sudo yum -y update
+sudo yum -y install ruby
+sudo yum -y install wget
+cd /home/ec2-user
+wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
+sudo yum install -y python-pip
+sudo pip install awscli
+
