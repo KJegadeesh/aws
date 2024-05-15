@@ -15,3 +15,6 @@ sudo ./install auto
 sudo yum install -y python-pip
 sudo pip install awscli
 
+-------------------------------------
+sudo systemctl status codedeploy-agent
+
